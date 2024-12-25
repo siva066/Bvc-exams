@@ -1,86 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DEVREV's Library Management</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BVC Group Academic Portal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header Section -->
   <header class="header">
-		<h1 class="logo"><a href="#">Library Management</a></h1>
-      <ul class="main-nav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="https://jagadeeshpj.netlify.app/" target="_blank">About(Me)</a></li>
-          <li><a href="#">Books</a></li>
-          <li><a href="#">Contact</a></li>
-      </ul>
-	</header> 
+    <h1 class="logo"><a href="#">BVC Academic Portal</a></h1>
+    <ul class="main-nav">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#sem-papers">Semester Papers</a></li>
+      <li><a href="#faculty">Faculty</a></li>
+      <li><a href="#feedback">Feedback</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </header>
 
-  <body>
-    <div class="wrapper">
-      <div id="search-container">
-        <input
-          type="search"
-          id="search-input"
-          placeholder="Search Title name here.."
-        />
-        <button id="search">Search</button>
-      </div>
-      <div id="buttons">
-        <button class="button-value" onclick="filterProduct('all')">All</button>
-        <button class="button-value" onclick="filterProduct('Basic')">
-          Basic
-        </button>
-        <button class="button-value" onclick="filterProduct('IT')">
-          IT
-        </button>
-        <button class="button-value" onclick="filterProduct('CSE')">
-          CSE
-        </button>
-        <button class="button-value" onclick="filterProduct('ISE')">
-          ISE
-        </button>
-        <button class="button-value" onclick="filterProduct('Novel')">
-          Novel
-        </button>
-        <button class="button-value" onclick="filterProduct('Fantasy')">
-          Fantasy
-        </button>
-      </div>
-      <div id="Books"></div>
+  <!-- Search and Categories -->
+  <div class="wrapper">
+    <div id="search-container">
+      <input type="search" id="search-input" placeholder="Search Title name here...">
+      <button id="search">Search</button>
     </div>
-    <script src="script.js"></script>
-  </body>
+    <div id="buttons">
+      <button class="button-value active" onclick="filterProduct('all')">All</button>
+      <button class="button-value" onclick="filterProduct('IT')">IT</button>
+      <button class="button-value" onclick="filterProduct('CSE')">CSE</button>
+      <button class="button-value" onclick="filterProduct('ISE')">ISE</button>
+      <button class="button-value" onclick="filterProduct('Novel')">Novel</button>
+      <button class="button-value" onclick="filterProduct('Fantasy')">Fantasy</button>
+    </div>
+
+    <!-- Books Section -->
+    <div id="Books">
+      <div class="card">
+        <div class="image-container">
+          <img src="book1.jpg" alt="Book 1">
+        </div>
+        <div class="container">
+          <h5>Book Title 1</h5>
+          <p>Author: John Doe</p>
+          <p>Category: IT</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image-container">
+          <img src="book2.jpg" alt="Book 2">
+        </div>
+        <div class="container">
+          <h5>Book Title 2</h5>
+          <p>Author: Jane Smith</p>
+          <p>Category: Novel</p>
+        </div>
+      </div>
+      <!-- Add more cards as needed -->
+    </div>
+  </div>
+
+  <!-- Footer Section -->
   <footer>
     <div class="footer">
-    <div class="row">
-    <a href="https://github.com/jagadeeshpj" target="_blank"><i class="fa fa-github"></i></a>
-    <a href="https://www.instagram.com/jagadeesh2001/" target="_blank"><i class="fa fa-instagram"></i></a>
-    <a href="#"><i class="fa fa-youtube"></i></a>
-    <a href="#"><i class="fa fa-twitter"></i></a>
+      <div class="row">
+        <a href="#"><i class="fa fa-github"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+      </div>
+      <div class="row">
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+      </div>
+      <div class="row">
+        BVC Group || Copyright © 2024
+      </div>
     </div>
-    
-    <div class="row">
-    <ul>
-    <li><a href="#">Contact us</a></li>
-    <li><a href="#">Privacy Policy</a></li>
-    <li><a href="#">Terms & Conditions</a></li>
-    </ul>
-    </div>
-    
-    <div class="row">
-    DEVREV Library Management || Copyright © 2022  - All rights reserved || Designed By: P JAGADEESH 
-    </div>
-    </div>
-    </footer>
-    
+  </footer>
+</body>
 </html>
-
-<!-- This site developed by 
-P JAGADEESH
-jagadeeshpj2001@gmail.com
--->
